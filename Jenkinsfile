@@ -18,7 +18,7 @@ pipeline{
         }
         stage('package jar'){
             steps{
-                sh 'jar fm factorial.jar manifest.txt Factorial.class'
+                sh 'jar cfm factorial.jar manifest.txt Factorial.class'
             }
         }
         stage('archiving  artifacts'){
